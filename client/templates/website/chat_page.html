@@ -5,17 +5,36 @@
 		<div class="col-md-12">
 			<div class="well well-lg">
 			{{#each messages}}
-			{{> chat_message}}
+				{{> chat_message}}
 			{{/each}}
 			</div>	
 		</div>
 	</div>
-    <div class="row">
-		<div class="col-md-12">
+    <div class="row"> 
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+			 <form class="js-send-chat">
+			        <div class="form-group">
+			          <textarea id="textAreaNewChat" class="form-control" type="text" 
+			          		name="chat" 
+			          		placeholder="type a message here..."
+                            rows="3"
+			          	></textarea>
+			        </div>
+
+                    <div style="{width: 205px; float: left}">
+                           {{> emoticons callback=selectEmoticonCallback}}
+                    </div>
+                    <br/>
+
+
+			        <button class="btn btn-primary btn-block">Send</button>   
+			 </form>
+	    </div>
+	<!--<div class="col-md-12"> 
 			<form class="js-send-chat">
-			<input class="input" type="text" name="chat" placeholder="type a message here...">
-			<button class="btn btn-default">send</button>
-		</form>
-		</div>
+				<input class="input" type="text" name="chat" placeholder="type a message here...">
+				<button class="btn btn-default">send</button>
+			</form>
+		</div>-->
 	</div>
 </template>

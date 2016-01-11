@@ -1,5 +1,23 @@
 /* CSS declarations go here */
 
+/* NavBar */
+.navbar{
+    margin-bottom: 0;
+}
+.navbar-inverse{
+    background-color: #555555;
+    border-color: #444444;
+    color: #cccccc
+}
+
+/* Body Container */
+.top-margin{
+	margin-top:50px;
+	background-color: "#e7acac";
+}
+
+
+/* Avatar */
 .user_avatar{
 	min-height:100px;
 	text-align: center;
@@ -7,4 +25,52 @@
 }
 .avatar_img{
 	height:75px;
+}
+
+.avatar_chat_display{
+    display: inline;
+    padding-top: 7px;
+}
+
+
+/* Chat Bubble */
+
+.bubble {
+    background-color: #FFF0A0;
+    background-image: -webkit-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:    -moz-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:     -ms-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:      -o-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:         linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.5),
+    3px 3px 0 hsla(0,0%,0%,.1);
+    color: #333;
+    display: inline-block;
+    font: 16px/25px sans-serif;
+    padding: 15px 25px;
+    position: relative;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.5);
+    max-width: 350px;
+    margin: 2px 0;
+}
+
+.bubble2 {
+    background-color: #cfe4fe;
+    background-image: -webkit-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:    -moz-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:     -ms-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:      -o-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:         linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.5),
+    3px 3px 0 hsla(0,0%,0%,.1);
+    color: #333;
+    display: inline-block;
+    font: 16px/25px sans-serif;
+    padding: 15px 25px;
+    position: relative;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.5);
+    max-width: 350px;
+    margin: 2px 0;
 }

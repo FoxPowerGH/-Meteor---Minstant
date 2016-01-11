@@ -1,5 +1,20 @@
 <!-- simple template that displays a message -->
 <template name="chat_message">
-	someone said: {{text}}
-	<br>
+
+	<div class='{{messageBackgroundClass sentBy}}'> 
+
+        <!-- {{#if isSecondUser}}  
+        <span class="avatar_chat_display col-xs-2">{{> avatar user=user size="mySize" shape="circle"}}</span>
+        {{/if}} -->
+      <!--  <span class="chat-message-wrapper col-xs-10 {{#if isSecondUser}}bubble2 {{/if }} {{#if isCurrentUser}}bubble {{/if }}">
+            {{text}}</span>  -->
+
+		<span class="text-muted">{{localTime timeStamp}}</span> <span class="bold">{{getUser sentBy}}</span>
+		-->said: {{text}}
+		<br> 
+
+	<!--	{{#if isCurrentUser}}
+            <span class="avatar_chat_display col-xs-2">{{> avatar user=user shape="circle"}}</span>
+        {{/if}}-->
+	</div>
 </template>
