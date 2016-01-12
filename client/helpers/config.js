@@ -63,13 +63,12 @@ Avatar.setOptions({
     },
     customImageProperty: function(){
         var user = this;
-        console.log("Avatar Client:  "+user.profile)
 
-        //if (user && user.profile && user.profile.avatar)
-        //{
+        if (user && user.profile && user.profile.avatar)
+        {
             return "/"+ user.profile.avatar;
-        //}
-        //return null;
+        }
+        return null;
     },
     fallbackType: "initials",
 });

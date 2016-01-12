@@ -4,6 +4,7 @@
 .navbar{
     margin-bottom: 0;
 }
+
 .navbar-inverse{
     background-color: #555555;
     border-color: #444444;
@@ -16,6 +17,10 @@
 	background-color: "#e7acac";
 }
 
+/* Bottom Container */
+.navbar-fixed-bottom{
+    min-height: 30px;
+}
 
 /* Avatar */
 .user_avatar{

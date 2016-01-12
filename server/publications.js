@@ -1,21 +1,4 @@
-Avatar.setOptions({
-    imageSizes: {
-        'large': 80,
-        'mySize': 50,
-        'extra-small': 32
-    },
-    customImageProperty: function(){
-        var user = this;
-        console.log("Avatar Server:  "+user.profile)
 
-        if (user && user.profile && user.profile.avatar)
-        {
-            return "/"+ user.profile.avatar;
-        }
-        return null;
-    },
-    fallbackType: "initials",
-});
 
 
 Meteor.publish('chats', function(){
