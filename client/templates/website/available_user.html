@@ -3,15 +3,17 @@
 	<div class="col-md-2">
 		<div class="user_avatar">
 			{{#if isMyUser _id}} 
-			<div class="bg-success">{{getUsername _id}} (YOU)
-				<br/>
-				<img src="{{profile.avatar}}" class="avatar_img">			
+			<!--<div class="bg-success">{{getUsername _id}} (YOU)-->
+			<div class="user_avatar">{{getUsername _id}}  (YOU)
+				{{> avatar user=this size="large" shape="circle" }}
+			<!-- 	<br/>
+				<img src="{{profile.avatar}}" class="avatar_img">	 -->		
 			</div>
 			{{else}}
 			<a href="/chat/{{_id}}">
 				{{getUsername _id}}
-				<br/>
-				<img src="/{{profile.avatar}}" class="avatar_img">
+				{{> avatar user=this size="large" shape="circle" }}
+			<!--	<img src="/{{profile.avatar}}" class="avatar_img">  -->
 			</a>
 			{{/if}}
 		</div>

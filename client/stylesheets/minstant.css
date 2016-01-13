@@ -12,6 +12,10 @@
 }
 
 /* Body Container */
+body{
+    background-color: lightsteelblue;
+}
+
 .top-margin{
 	margin-top:50px;
 	background-color: "#e7acac";

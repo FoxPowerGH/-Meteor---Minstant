@@ -56,21 +56,25 @@ Accounts.ui.config({
 });
 
 Avatar.setOptions({
+    fallbackType: "initials",
     imageSizes: {
         'large': 80,
         'mySize': 50,
         'extra-small': 32
     },
     customImageProperty: function(){
-        var user = this;
+        
 
-        if (user && user.profile && user.profile.avatar)
-        {
-            return "/"+ user.profile.avatar;
-        }
-        return null;
+        var user = this;
+        return "/"+ user.profile.avatar;
+
+        //if (user && user.profile && user.profile.avatar)
+        //{
+        //    return "/"+ user.profile.avatar;
+        //}
+        //return null;
     },
-    fallbackType: "initials",
+
 });
 
 

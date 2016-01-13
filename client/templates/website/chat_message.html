@@ -7,11 +7,15 @@
         <span class="avatar_chat_display col-xs-2">{{> avatar user=user size="mySize" shape="circle"}}</span>
         {{/if}} -->
         
-      <!--  {{#with currentUser}}
-          <p>{{> avatar user=currentUser shape="circle"}}</p> 
-        {{/with}}-->
-        <p>{{> avatar user=currentUser shape="circle"}}</p>
-		<span class="chat-message-wrapper col-xs-10 {{#if isSecondUser}}bubble2 {{/if }} {{#if isCurrentUser}}bubble {{/if }}">{{localTime timeStamp}} {{getUser sentBy}} --> {{text}}</span> 
+        <!-- {{#with currentUser}}
+            <p>{{> avatar userId=sentBy shape="circle"}}</p> 
+        {{else}}
+            <p>{{> avatar user=sentBy shape="circle"}}</p>
+		{{/with}}-->
+
+        <p>{{> avatar userId=sentBy shape="circle"}}</p> 
+
+        <span class="chat-message-wrapper col-xs-10 {{#if isSecondUser}}bubble2 {{/if }} {{#if isCurrentUser}}bubble {{/if }}">{{localTime timeStamp}} {{getUser sentBy}} --> {{text}}</span> 
         <br> 
 	<!--	{{#if isCurrentUser}}
             <span class="avatar_chat_display col-xs-2">{{> avatar user=user shape="circle"}}</span>
