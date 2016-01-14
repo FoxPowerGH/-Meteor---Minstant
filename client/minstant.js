@@ -8,6 +8,10 @@
     }
   })
  Template.available_user.helpers({
+    isUserOnline: function(userId){
+        var user = Meteor.users.findOne({_id:userId});
+        return user && user.status.online == true;
+    },
     getUsername:function(userId){
 
       user = Meteor.users.findOne({_id:userId});

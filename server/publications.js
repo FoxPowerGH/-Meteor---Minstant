@@ -1,8 +1,12 @@
 
-
-
 Meteor.publish('chats', function(){
-  return Chats.find({});
+  return Chats.find({
+    $or: [{
+      user1Id: this.userId
+    }, {
+      user2Id: this.userId
+    }]
+  });
 });
 
 Meteor.publish("users", function(){
@@ -10,6 +14,5 @@ Meteor.publish("users", function(){
 });
 
 Meteor.publish("userStatus", function() {
-  //  console.log("PUBLISHING METEOR USERS STATUS");
-    return Meteor.users.find({ "status.online": true });
+    return Meteor.users.find();
 });

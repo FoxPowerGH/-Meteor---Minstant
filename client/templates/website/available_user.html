@@ -13,6 +13,12 @@
 			<a href="/chat/{{_id}}">
 				{{getUsername _id}}
 				{{> avatar user=this size="large" shape="circle" }}
+				
+				<div class="col-xs-9">
+					<span><i class="fa fa-circle"
+	                   style=" {color: {{#if isUserOnline _id}} green {{else}} lightgrey {{/if}} }">
+	                </i></span>
+				</div>
 			<!--	<img src="/{{profile.avatar}}" class="avatar_img">  -->
 			</a>
 			{{/if}}
